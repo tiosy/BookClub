@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JKF-A6-903">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pFz-gd-IzW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0lp-ad-ekV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zfq-EY-TqR">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zfq-EY-TqR" id="wyD-vR-5gh">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pFz-gd-IzW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="33k-xi-BcA"/>
+                            <constraint firstItem="0lp-ad-ekV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="EgM-rT-8tv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0lp-ad-ekV" secondAttribute="trailing" constant="-16" id="Zew-qQ-Iez"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0lp-ad-ekV" secondAttribute="bottom" id="d7a-xm-kKX"/>
+                            <constraint firstItem="0lp-ad-ekV" firstAttribute="top" secondItem="pFz-gd-IzW" secondAttribute="bottom" id="eKV-D0-h8B"/>
+                            <constraint firstItem="pFz-gd-IzW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oAN-eF-aEE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pFz-gd-IzW" secondAttribute="trailing" constant="-16" id="qoi-VI-hxR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pFz-gd-IzW"/>
+                                <exclude reference="0lp-ad-ekV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="33k-xi-BcA"/>
+                                <exclude reference="oAN-eF-aEE"/>
+                                <exclude reference="qoi-VI-hxR"/>
+                                <exclude reference="EgM-rT-8tv"/>
+                                <exclude reference="Zew-qQ-Iez"/>
+                                <exclude reference="eKV-D0-h8B"/>
+                                <exclude reference="d7a-xm-kKX"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pFz-gd-IzW"/>
+                                <include reference="0lp-ad-ekV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="33k-xi-BcA"/>
+                                <include reference="oAN-eF-aEE"/>
+                                <include reference="qoi-VI-hxR"/>
+                                <include reference="EgM-rT-8tv"/>
+                                <include reference="Zew-qQ-Iez"/>
+                                <include reference="eKV-D0-h8B"/>
+                                <include reference="d7a-xm-kKX"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="JRc-pW-ehW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fU2-n1-gav"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1357.5" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2eu-Bp-cX2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JKF-A6-903" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wic-4A-hqU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6sn-ZL-Tqr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MrM-xl-Zb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="965"/>
         </scene>
     </scenes>
 </document>
