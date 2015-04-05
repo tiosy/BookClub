@@ -7,7 +7,7 @@
 //
 
 #import "ListPeopleViewController.h"
-#import "AppDelegate.h"
+#import <CoreData/CoreData.h>
 #import "FriendSubclass.h"
 
 @interface ListPeopleViewController () <UITableViewDelegate,UITableViewDataSource>

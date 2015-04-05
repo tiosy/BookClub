@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "FriendSubclass.h"
+
 
 @interface OneFriendViewController : UIViewController
+
+@property NSManagedObjectContext *managedObjectContext;
+@property FriendSubclass *friend;
+
 
 @end

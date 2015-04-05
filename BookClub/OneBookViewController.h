@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "FriendSubclass.h"
+#import "Book.h"
+#import "Comment.h"
+
 
 @interface OneBookViewController : UIViewController
+
+@property NSManagedObjectContext *managedObjectContext;
+@property FriendSubclass *friend;
+@property Book *book;
+@property Comment *comment;
 
 @end

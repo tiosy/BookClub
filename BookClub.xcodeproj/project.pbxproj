@@ -11,6 +11,7 @@
 		6E3219BE1ACCFBF600CBCAAA /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3219BD1ACCFBF600CBCAAA /* Book.m */; };
 		6E3219C11ACCFBF600CBCAAA /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3219C01ACCFBF600CBCAAA /* Comment.m */; };
 		6E3219C41ACDA10200CBCAAA /* FriendSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3219C31ACDA10200CBCAAA /* FriendSubclass.m */; };
+		6ED436A71AD1968500E96785 /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED436A61AD1968500E96785 /* Book.png */; };
 		6EFD6D9A1ACC9EAF001C2CBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD6D991ACC9EAF001C2CBA /* main.m */; };
 		6EFD6D9D1ACC9EAF001C2CBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD6D9C1ACC9EAF001C2CBA /* AppDelegate.m */; };
 		6EFD6DA01ACC9EAF001C2CBA /* BookClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD6D9E1ACC9EAF001C2CBA /* BookClub.xcdatamodeld */; };
@@ -45,6 +46,7 @@
 		6E3219C01ACCFBF600CBCAAA /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		6E3219C21ACDA10200CBCAAA /* FriendSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendSubclass.h; sourceTree = "<group>"; };
 		6E3219C31ACDA10200CBCAAA /* FriendSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendSubclass.m; sourceTree = "<group>"; };
+		6ED436A61AD1968500E96785 /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Book.png; sourceTree = "<group>"; };
 		6EFD6D941ACC9EAF001C2CBA /* BookClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFD6D981ACC9EAF001C2CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EFD6D991ACC9EAF001C2CBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,17 +113,17 @@
 			children = (
 				6EFD6D9B1ACC9EAF001C2CBA /* AppDelegate.h */,
 				6EFD6D9C1ACC9EAF001C2CBA /* AppDelegate.m */,
+				6EFD6DA41ACC9EAF001C2CBA /* Main.storyboard */,
 				6EFD6DA11ACC9EAF001C2CBA /* RootViewController.h */,
 				6EFD6DA21ACC9EAF001C2CBA /* RootViewController.m */,
-				6EFD6DA41ACC9EAF001C2CBA /* Main.storyboard */,
+				6EFD6DC21ACCB770001C2CBA /* ListPeopleViewController.h */,
+				6EFD6DC31ACCB770001C2CBA /* ListPeopleViewController.m */,
+				6EFD6DC51ACCB79E001C2CBA /* OneFriendViewController.h */,
+				6EFD6DC61ACCB79E001C2CBA /* OneFriendViewController.m */,
 				6EFD6DCB1ACCB7DD001C2CBA /* AddBookViewController.h */,
 				6EFD6DCC1ACCB7DD001C2CBA /* AddBookViewController.m */,
 				6EFD6DC81ACCB7BE001C2CBA /* OneBookViewController.h */,
 				6EFD6DC91ACCB7BE001C2CBA /* OneBookViewController.m */,
-				6EFD6DC51ACCB79E001C2CBA /* OneFriendViewController.h */,
-				6EFD6DC61ACCB79E001C2CBA /* OneFriendViewController.m */,
-				6EFD6DC21ACCB770001C2CBA /* ListPeopleViewController.h */,
-				6EFD6DC31ACCB770001C2CBA /* ListPeopleViewController.m */,
 				6EFD6DA71ACC9EAF001C2CBA /* Images.xcassets */,
 				6EFD6DA91ACC9EAF001C2CBA /* LaunchScreen.xib */,
 				6EFD6D9E1ACC9EAF001C2CBA /* BookClub.xcdatamodeld */,
@@ -130,9 +132,9 @@
 				6E3219BC1ACCFBF600CBCAAA /* Book.h */,
 				6E3219BD1ACCFBF600CBCAAA /* Book.m */,
 				6E3219B91ACCFBF600CBCAAA /* Friend.h */,
+				6E3219BA1ACCFBF600CBCAAA /* Friend.m */,
 				6E3219C21ACDA10200CBCAAA /* FriendSubclass.h */,
 				6E3219C31ACDA10200CBCAAA /* FriendSubclass.m */,
-				6E3219BA1ACCFBF600CBCAAA /* Friend.m */,
 				6EFD6D971ACC9EAF001C2CBA /* Supporting Files */,
 			);
 			path = BookClub;
@@ -141,6 +143,7 @@
 		6EFD6D971ACC9EAF001C2CBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6ED436A61AD1968500E96785 /* Book.png */,
 				6EFD6DC01ACCB30D001C2CBA /* person.png */,
 				6EFD6D981ACC9EAF001C2CBA /* Info.plist */,
 				6EFD6D991ACC9EAF001C2CBA /* main.m */,
@@ -248,6 +251,7 @@
 			files = (
 				6EFD6DC11ACCB30D001C2CBA /* person.png in Resources */,
 				6EFD6DA61ACC9EAF001C2CBA /* Main.storyboard in Resources */,
+				6ED436A71AD1968500E96785 /* Book.png in Resources */,
 				6EFD6DAB1ACC9EAF001C2CBA /* LaunchScreen.xib in Resources */,
 				6EFD6DA81ACC9EAF001C2CBA /* Images.xcassets in Resources */,
 			);
