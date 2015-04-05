@@ -108,6 +108,13 @@
 
     cell.textLabel.text = [self.friend valueForKey:@"name"];
 
+
+   // cell.imageView.layer.cornerRadius = cell.imageView.frame.size.width / 2.0;
+    cell.imageView.clipsToBounds = YES;
+    cell.imageView.backgroundColor =[UIColor purpleColor];
+    cell.imageView.layer.cornerRadius = 8.0f;
+
+
     //photo in core data is NSDATA
 //    NSData *imageNSData = [friend valueForKey:@"photo"];
 //    cell.imageView.image = [UIImage imageWithData:imageNSData];
@@ -122,11 +129,7 @@
     } else {
         return self.myFriendsArray.count;
     }
-
-
 }
-
-
 
 #pragma mark - UISearchbarDelegate (fitering by entering characters
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
